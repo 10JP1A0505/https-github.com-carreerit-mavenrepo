@@ -32,6 +32,18 @@
             <url>http://172.31.2.113:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
+          <distributionManagement>
+  <repository>
+    <id>releases</id>
+    <name>releases</name>
+    <url>http://somerepo:8081/nexus/content/repositories/releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <name>snapshots</name>
+    <url>http://somerepo:8081/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
             <url>http://172.31.2.113:8081/repository/maven-snapshots/</url>
